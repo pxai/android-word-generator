@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Simple">
+        <CheckBoxPreference
+            android:key="save_db"
+            android:title="Save to DB"
+            android:summary="Save to DB" />
+        <EditTextPreference
+            android:key="player"
+            android:title="Player"
+            android:summary="Name of Player"
+            android:dialogTitle="Name of Player" />
+        <ListPreference
+            android:key="syllables"
+            android:title="Syllables"
+            android:summary="Syllable number"
+            android:dialogTitle="Syllable number for words"
+            android:entries="@array/syllables"
+            android:entryValues="@array/syllables_values" />
+    </PreferenceCategory>
+</PreferenceScreen>
